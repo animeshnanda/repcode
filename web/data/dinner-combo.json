@@ -1,0 +1,26 @@
+{
+    "type":"dinner",
+    "combo":
+    [
+	  {
+		"type":"Nonveg",
+		"color":"red",
+		"comboimg": "../img/prawn-biriyani.jpg",
+		"price": 120,
+		"comboname":"Prawn Biriyani With Raita",
+		"combodesc":"Prawn biriyani served with raita for single person",
+		"chefname":"Animesh",
+		"chefimage":"../img/animesh.jpg"
+      },
+      {
+		"type":"Veg",
+		"color":"green",
+		"comboimg": "../img/paneer-butter.jpg",
+		"price": 80,
+		"comboname":"Paneer Butter Masala With 5 Rotis",
+		"combodesc":"Paneer butter masala with 5 rotis for single person",
+		"chefname":"Animesh",
+		"chefimage":"../img/animesh.jpg"
+      }
+    ]
+}

@@ -1,0 +1,57 @@
+<div class="btn-group btn-group-justified">
+  <a data-toggle="tab" href="#lunch" class="btn btn-primary">LUNCH (11-2)</a>
+  <a data-toggle="tab" href="#dinner" class="btn btn-primary">DINNER(6-9)</a>
+</div>
+<div class="container">
+	<h4>Available Combos</h4>
+	<div class="tab-content">
+		<div id="lunch" class="tab-pane fade in active">
+			<div class="list-group">
+				<div class="list-group-item" data-ng-repeat="x in lcombos.combo">
+					<div class="img-container">
+					  <img class="img-rounded img-responsive" ng-src="{{x.comboimg}}"/>
+					</div>
+					<div class="info-container">
+						<h4 class="combo-name" style="color:{{x.color}}">{{x.comboname}}</h4><!--span style="color:{{x.color}}"><b>{{x.type}}</b></span-->
+						<p class="combo-desc">{{x.combodesc}} <span class="chefname"><b> by Chef {{x.chefname}}</b></span></p>
+						<div class="menu-desc">
+							<div class="chef-info">
+								<img class="img-circle img-responsive" width="75" ng-src="{{x.chefimage}}"/>
+							</div>
+							<div class="other-info">
+								<span class="price">&#8377; {{x.price}}</span><br/>
+								<!--span style="color:{{x.color}}"><b>{{x.type}}</b></span-->
+								<div counter value="quantity" min="0" max="8" step="1"></div>
+								<!--editable-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="dinner" class="tab-pane fade">
+			<div class="list-group">
+				<div class="list-group-item" data-ng-repeat="y in dcombos.combo">
+					<div class="img-container">
+					  <img class="img-rounded img-responsive" ng-src="{{y.comboimg}}"/>
+					</div>
+					<div class="info-container">
+						<h4 class="combo-name" style="color:{{y.color}}">{{y.comboname}}</h4><!--span style="color:{{y.color}}"><b>{{y.type}}</b></span-->
+						<p class="combo-desc">{{y.combodesc}}<span class="chefname"><b> by Chef {{y.chefname}}</b></span></p>
+						<div class="menu-desc">
+							<div class="chef-info">
+								<img class="img-circle img-responsive" width="75" ng-src="{{y.chefimage}}"/>
+							</div>
+							<div class="other-info">
+								<span class="price">&#8377; {{y.price}}</span><br/>
+								<!--span style="color:{{y.color}}"><b>{{y.type}}</b></span-->
+								<div counter value="quantity" min="0" max="8" step="1"></div>
+								<!--editable-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

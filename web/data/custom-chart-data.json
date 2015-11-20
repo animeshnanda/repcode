@@ -1,0 +1,37 @@
+	{"chart": {
+		"type": "column"
+		},
+		"title": {"text": "Compliance Over Time"},
+		"subtitle": {"text": "A: Stretch   B: Target   C: Threshold"},
+		"xAxis": {
+			"categories": "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec",
+			"crosshair": "true",
+			"title": {"text": "Month"}
+		},
+		"yAxis": {
+			"min": "0",
+			"title": {"text": "Percentage (%)"},
+			"minorTickInterval": 40
+		},
+		"tooltip": {
+			"headerFormat": "<span style='font-size:10px'>{point.key}</span><table>",
+			"pointFormat": "<tr><td style='color:{series.color};padding:0'>{series.name}: </td> <td style='padding:0'><b>{point.y:.1f} %</b></td></tr>",
+			"footerFormat": "</table>",
+			"shared": "true",
+			"useHTML": "true"
+		},
+		"plotOptions": {
+			"column": {
+				"pointPadding": "0.2",	"borderWidth": "0"
+			}
+		},
+		"series": [{
+			"name": "Welser",
+			"data": "49.9,71.5,84.4,89.2,44.0,76.0,35.6,48.5,96.4,94.1,95.6,54.4"
+
+		}, {
+			"name": "Practice",
+			"data": "83.6,78.8,98.5,93.4,96.0,84.5,75.0,84.3,91.2,83.5,96.6,92.3"
+
+		}]
+	}	

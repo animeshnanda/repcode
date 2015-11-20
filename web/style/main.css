@@ -1,0 +1,37 @@
+.img-container{float: left;padding-right: 25px;}
+.img-container>img{width:350px;}
+.list-group-item > img{float:left;}
+.list-group-item{min-height:260px;background: aliceblue;}
+.menu-desc>img{padding:10px;float:left;}
+.chef-info{float:left;margin-right: 15px;}
+.chef-info>img{width:75px;}
+.counter-container .counter-minus, .counter-plus {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    background: #428bca;
+    color: white;
+    margin: 0;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.counter-container .counter-field {
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+    width: 50px;
+}
+.price{font-size:20px;}
+@media only screen and (min-width: 320px) and (max-width: 765px) and (orientation: landscape){
+
+}
+@media only screen and (min-width: 320px) and (max-width: 765px){
+.list-group-item > img{width:100%;min-width:200px;}
+.combo-desc{font-size:11px;}
+.chef-info>img{width:60px;}
+.info-container>h4{font-size:14px;font-weight: bold;}
+.list-group-item{min-height:340px;}
+}

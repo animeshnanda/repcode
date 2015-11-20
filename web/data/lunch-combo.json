@@ -1,0 +1,26 @@
+{
+    "type":"lunch",
+    "combo":
+    [
+      {
+		"type":"Veg",
+		"color":"green",
+		"comboimg": "../img/paneer-butter.jpg",
+		"price": 80,
+		"comboname":"Paneer Butter Masala With 5 Rotis",
+		"combodesc":"Paneer butter masala with 5 rotis for single person",
+		"chefname":"Animesh",
+		"chefimage":"../img/animesh.jpg"
+      },
+      {
+		"type":"Nonveg",
+		"color":"red",
+		"comboimg": "../img/chicken-tikka.jpg",
+		"price": 100,
+		"comboname":"Chicken Tikka Masala With 5 Rotis",
+		"combodesc":"Chicken tikka masala with 5 rotis for single person",
+		"chefname":"Animesh",
+		"chefimage":"../img/animesh.jpg"
+      }
+    ]
+}

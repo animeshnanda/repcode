@@ -1,0 +1,33 @@
+{
+	"type":"user",
+	"id":"1",
+	"name":"Animesh Nanda",
+	"userimg":"../img/animesh.jpg",
+	"phone":"+91-9741881742",
+	"email": "animeshnanda@gmail.com",
+	"address":[
+		{
+			"address1": "B1, Suman Nivas, 82/6",
+			"address2": "Shamanna Reddy Layout, Munnekolala New Extn., Marathahalli",
+			"city": "Bengaluru",
+			"state":"Karnataka",
+			"pin":"560037"
+		}
+	],
+	"order":[
+		{
+		  "orderid": "123456",
+		  "amount": "150",
+		  "date":"12-Nov-2015",
+		  "status": "Success",
+		  "remark": "Good"
+		},
+		{
+		  "orderid": "134567",
+		  "amount": "180",
+		  "date":"16-Nov-2015",
+		  "status": "Success",
+		  "remark": "Good"
+		}
+	]
+}

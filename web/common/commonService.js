@@ -23,4 +23,14 @@ define([
 			return promise;
 		};
 	})
+	.service('userinfoService', function($http,$q) {
+		this.getUserInfo = function() {
+			var strData;
+			var promise=$http.get("http://localhost:9000/data/user-info.json")
+			.success(function (data) {
+				strData = data;
+			});
+			return promise;
+		};
+	})
 });

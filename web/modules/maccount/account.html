@@ -1,1 +1,44 @@
-{{hello}}
+<div class="container">
+
+<div class="user-info">
+	<div class="user-img">
+		<img class="img-circle img-responsive" width="75" ng-src="{{uinfo.userimg}}"/>
+	</div>
+	<div class="user-basic-info">
+		<b>{{uinfo.name}}</b></br>
+		{{uinfo.phone}}</br>
+		{{uinfo.email}}
+	</div>
+</div>
+
+<div class="user-address">
+	<h4>Saved Addresses</h4>
+	<div class="">
+		<div class="list-group-item-info list-address" data-ng-repeat="x in uinfo.address">
+			{{x.address1}}</br>
+			{{x.address2}}</br>
+			{{x.city}}</br>
+			{{x.state}}</br>
+			{{x.pin}}
+			<div class="list-group-item-success"></div>
+		</div>
+		
+	</div>
+</div>
+
+<div class="user-order">
+	<h4>Past Orders</h4>
+	<div class="">
+		<div class="list-group-item-info" data-ng-repeat="x in uinfo.order">
+			Order ID : {{x.orderid}}</br>
+			Order Amount : &#8377;{{x.amount}}</br>
+			Order Date : {{x.date}}</br>
+			<i class="fa fa-check"></i>{{x.status}}</br>
+			Remark : {{x.remark}}
+			<div class="list-group-item-success">&nbsp;</div>
+		</div>
+		
+	</div>
+</div>
+
+</div>

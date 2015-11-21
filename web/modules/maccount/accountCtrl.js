@@ -2,9 +2,10 @@
 define([
 	'angular',
 	'angularRoute',
-	'jquery'
+	'jquery',
+	'commonService'
 ], function(angular) {
-	angular.module('myApp.account', ['ngRoute'])
+	angular.module('myApp.account', ['ngRoute','commonService'])
 	.config(['$routeProvider', function($routeProvider) {
 
             $routeProvider.when('/account', {
@@ -12,12 +13,12 @@ define([
                 controller: 'accountCtrl'
             });
 	}])
-	.controller('accountCtrl', ['$scope',function($scope) {
-	
+	.controller('accountCtrl', ['$scope','userinfoService',function($scope,userinfoService) {
 
-		$scope.hello = "ACCOUNT";
-		
-
+		var userData = userinfoService.getUserInfo().then(function(data){
+			$scope.uinfo = data.data;
+			console.log($scope.uinfo);
+		});
 		
     }]);
 });

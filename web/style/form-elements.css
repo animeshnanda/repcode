@@ -17,7 +17,7 @@ textarea.form-control {
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
-.registerctrl input[type="text"], 
+.registerctrl input[type="text"], .bulkctrl input[type="text"],
 textarea, 
 textarea.form-control {
 	height: 50px;

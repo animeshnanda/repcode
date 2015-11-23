@@ -25,6 +25,7 @@ define([
 			//console.log($scope.dcombos);
 		});
 		$scope.quantity = 0;
+		$scope.totalitem = 2;
     }]);
 });
 

@@ -3,6 +3,7 @@
     "combo":
     [
 	  {
+		"comboid":3,
 		"type":"Nonveg",
 		"color":"red",
 		"comboimg": "../img/prawn-biriyani.jpg",
@@ -13,6 +14,7 @@
 		"chefimage":"../img/animesh.jpg"
       },
       {
+		"comboid":1,
 		"type":"Veg",
 		"color":"green",
 		"comboimg": "../img/paneer-butter.jpg",

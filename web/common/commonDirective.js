@@ -20,14 +20,14 @@ define([
 			}
 			return directive;
 		})		
-		.directive('counter', function() {
+		.directive('counter', ['$rootScope', function($rootScope) {
 			return {
 				restrict: 'A',
 				scope: { value: '=value' },
 				template: '<a href="javascript:;" class="counter-minus" ng-click="minus()">-</a>\
 						  <input type="text" class="counter-field" ng-model="value" ng-change="changed()" ng-readonly="readonly">\
 						  <a  href="javascript:;" class="counter-plus" ng-click="plus()">+</a>',
-				link: function( scope , element , attributes ) {
+				link: function( scope , element , attributes, ctrl ) {
 					if ( angular.isUndefined(scope.value) ) {
 						throw "Missing the value attribute on the counter directive.";
 					}
@@ -46,6 +46,8 @@ define([
 							return false;
 						}
 						setValue( scope.value - step );
+						$rootScope.checktotal = $rootScope.checktotal - step;
+						console.log($rootScope.checktotal);
 					};
 					scope.plus = function() {
 						if ( max && (scope.value >= max || scope.value + step >= max) ) {
@@ -53,6 +55,9 @@ define([
 							return false;
 						}
 						setValue( scope.value + step );
+						$rootScope.checktotal = $rootScope.checktotal + step;
+						console.log($rootScope.checktotal);
+						//scope.totalitem = $rootScope.checktotal;
 					};
 					scope.changed = function() {
 						if ( !scope.value ) setValue( 0 );
@@ -73,7 +78,7 @@ define([
 					};
 				}
 			}
-		});
+		}]);
 		
 		
 });

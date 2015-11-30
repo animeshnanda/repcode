@@ -2,7 +2,7 @@
     "type":"lunch",
     "combo":
     [
-      {
+      { "comboid":1,
 		"type":"Veg",
 		"color":"green",
 		"comboimg": "../img/paneer-butter.jpg",
@@ -13,6 +13,7 @@
 		"chefimage":"../img/animesh.jpg"
       },
       {
+		"comboid":2,
 		"type":"Nonveg",
 		"color":"red",
 		"comboimg": "../img/chicken-tikka.jpg",

@@ -14,8 +14,10 @@ define([
                 controller: 'menuCtrl'
             });
 	}])
-
-	.controller('menuCtrl', ['$scope','lunchcomboService','dinnercomboService',function($scope,lunchcomboService,dinnercomboService) {
+	.run(['$rootScope',function($rootScope) {
+			$rootScope.checktotal = 0; 
+	}]) 
+	.controller('menuCtrl', ['$scope','lunchcomboService','dinnercomboService','$rootScope',function($scope,lunchcomboService,dinnercomboService,$rootScope) {
 		var lunchData = lunchcomboService.getLunchCombos().then(function(data){
 			$scope.lcombos = data.data;
 			//console.log($scope.lcombos);
@@ -25,7 +27,7 @@ define([
 			//console.log($scope.dcombos);
 		});
 		$scope.quantity = 0;
-		$scope.totalitem = 2;
+		$scope.totalitem = $rootScope.checktotal;
     }]);
 });
 

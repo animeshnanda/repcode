@@ -3,6 +3,8 @@ define([
 	'angular',
 	'commonService',
 	'angularRoute',
+	'../modules/mhome/homeCtrl',
+	'../modules/mchef/chefCtrl',
 	'../modules/mlogin/loginCtrl',
 	'../modules/mregister/registerCtrl',
 	'../modules/mmenu/menuCtrl',
@@ -15,6 +17,8 @@ define([
 	// Declare app level module which depends on views, and components
 	return angular.module('myApp', [
 		'ngRoute',
+		'myApp.home',
+		'myApp.chef',
 		'myApp.login',
 		'myApp.register',
 		'myApp.menu',
@@ -30,7 +34,15 @@ define([
 				when('/login', {
                     templateUrl: '/modules/mlogin/login.html',
                     controller: 'loginCtrl'
-                }).		
+                }).	
+				when('/home', {
+                    templateUrl: '/modules/mhome/home.html',
+                    controller: 'homeCtrl'
+                }).	
+				when('/menu', {
+                    templateUrl: '/modules/mmenu/menu.html',
+                    controller: 'menuCtrl'
+                }).					
 				when('/register', {
                     templateUrl: '/modules/mregister/register.html',
                     controller: 'registerCtrl'
@@ -57,8 +69,8 @@ define([
                 }).					
                 otherwise({
                     redirectTo: '/',
-					templateUrl: '/modules/mmenu/menu.html',
-					controller: 'menuCtrl'
+					templateUrl: '/modules/mchef/chef.html',
+					controller: 'chefCtrl'
                 });
 	}])
     .controller('mainPageCtrl', ['$scope', '$http', 'rootVariables', '$routeParams', function($scope, $http, rootVariables, $routeParams) {

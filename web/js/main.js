@@ -13,7 +13,8 @@ require.config({
 		'angularCookies': '../components/lib/angular-cookies/angular-cookies',
 		'bootstrap': '../components/lib/bootstrap/bootstrap.min',
 		'encBase64':'../components/lib/crypto/enc-base64-min',
-		'hmacsha256':'../components/lib/crypto/hmac-sha256'
+		'hmacsha256':'../components/lib/crypto/hmac-sha256',
+		'slideme': '../components/lib/slideme/jquery.slideme2'
 	},
 	shim: {
 		angularRoute: {
@@ -45,6 +46,9 @@ require.config({
 			deps: ['angular']
 		},
 		bootstrap: {
+			deps: ['jquery']
+		},
+		slideme: {
 			deps: ['jquery']
 		}
 	},

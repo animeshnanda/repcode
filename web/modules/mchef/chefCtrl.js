@@ -2,9 +2,11 @@
 define([
 	'angular',
 	'angularRoute',
-	'jquery'
+	'jquery',
+	'commonService',
+	'commonDirective'
 ], function(angular) {
-	angular.module('myApp.chef', ['ngRoute'])
+	angular.module('myApp.chef', ['ngRoute','commonService','commonDirective'])
 	
 	.config(['$routeProvider', function($routeProvider) {
 
@@ -14,8 +16,16 @@ define([
 			});
 	}])
 
-	.controller('chefCtrl', ['$scope','$http','$rootScope','$document',function($scope,$http,$rootScope,$document) {
-		$scope.hello = "hello chef";
-	}])
+	.controller('chefCtrl', ['$scope','$http','$rootScope','$document','location',function($scope,$http,$rootScope,$document,location) {
+		location.get(angular.noop, angular.noop);
+		$scope.isModalVisible = false;
+
+		$scope.toggleModal = function() {
+		  $scope.isModalVisible = !$scope.isModalVisible;
+		};
+
+		$scope.$watch('pickedLocation', $scope.toggleModal);
+		$scope.$watch('lookedUpLocation', $scope.toggleModal);
+		}])
 });
 

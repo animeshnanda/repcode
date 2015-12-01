@@ -16,7 +16,8 @@
 .img-container{float: left;padding-right: 25px;}
 .img-container>img{width:350px;}
 .list-group-item > img{float:left;}
-.list-group-item{min-height:260px;background: #F0F8FF;}
+.list-group-item{background: #F0F8FF;}
+.tab-content .list-group-item{min-height:260px;}
 .menu-desc>img{padding:10px;float:left;}
 .chef-info{float:left;margin-right: 15px;}
 .chef-info>img{width:75px;}
@@ -54,7 +55,7 @@ max-height: 250px;
 width: 100%;
 height: 100%;
 }
-
+.chefimg-container>img{width:60px;}
 @media (min-width: 768px){
 	.col-sm-2 {width: 10.666667%;}
 }
@@ -66,7 +67,7 @@ height: 100%;
 .combo-desc{font-size:11px;}
 .chef-info>img{width:60px;}
 .info-container>h4{font-size:14px;font-weight: bold;}
-.list-group-item{min-height:340px;}
+.tab-content .list-group-item{min-height:340px;}
 .user-info{float:left;width:100%;}
 .user-address,.user-order{float: left;width:100%;}
 }

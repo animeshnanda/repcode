@@ -3,6 +3,16 @@ define([
 	'angular'
 ], function(angular) {
 	angular.module('commonService', [])
+	.service('cheflistService', function($http,$q) {
+		this.getChefList = function() {
+			var strData;
+			var promise=$http.get("http://localhost:9000/data/chef-list.json")
+			.success(function (data) {
+				strData = data;
+			});
+			return promise;
+		};
+	})
 	.service('lunchcomboService', function($http,$q) {
 		this.getLunchCombos = function() {
 			var strData;

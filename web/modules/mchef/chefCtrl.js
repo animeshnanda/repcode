@@ -16,7 +16,11 @@ define([
 			});
 	}])
 
-	.controller('chefCtrl', ['$scope','$http','$rootScope','$document','location',function($scope,$http,$rootScope,$document,location) {
+	.controller('chefCtrl', ['$scope','$http','$rootScope','$document','location','cheflistService',function($scope,$http,$rootScope,$document,location,cheflistService) {
+		var chefData = cheflistService.getChefList().then(function(data){
+			$scope.cheflistdata = data.data;
+			//console.log($scope.lcombos);
+		});
 		location.get(angular.noop, angular.noop);
 		$scope.isModalVisible = false;
 

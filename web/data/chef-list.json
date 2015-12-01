@@ -1,0 +1,24 @@
+{
+	"type":"list",
+	"area":"Marathahalli",
+	"city":"Bengaluru",
+	"state":"Karnataka",
+	"chef":[
+		{
+		  "chefid": 1,
+		  "chefname": "Animesh Nanda",
+		  "rating":5,
+		  "reviewstatus": 0,
+		  "chefimg": "../img/animesh.jpg",
+		  "availability" : 1
+		},
+		{
+		  "chefid": 2,
+		  "chefname": "Abinash Sahoo",
+		  "rating":5,
+		  "reviewstatus": 1,
+		  "chefimg": "../img/animesh.jpg",
+		  "availability" : 1
+		}
+	]
+}

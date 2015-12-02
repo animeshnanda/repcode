@@ -63,6 +63,7 @@ height: 100%;
 }
 .chefimg-container>img{width:60px;margin-right:10px;float:left;}
 .rbtn-container{float: right;position: relative;bottom: 75px;}
+.cheflist-subheader{background: #6495ED;padding:10px;width:50%;}
 @media (min-width: 768px){
 	.col-sm-2 {width: 10.666667%;}
 }
@@ -78,4 +79,5 @@ height: 100%;
 .user-info{float:left;width:100%;}
 .user-address,.user-order{float: left;width:100%;}
 .cheflist-group {width: 100%;}
+.cheflist-subheader{width:100%;}
 }

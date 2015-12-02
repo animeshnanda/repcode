@@ -2,15 +2,21 @@
 <div class="cheflist-subheader"><h3>Around {{cheflistdata.area}}</h3></div>
 </hr>
 <div class="list-group">
-	<div class="list-group-item" data-ng-repeat="x in cheflistdata.chef">
+	<div class="list-group-item cheflist-group" data-ng-repeat="x in cheflistdata.chef">
 		<div class="chefimg-container">
 		  <img class="img-circle img-responsive" ng-src="{{x.chefimg}}"/>
 		</div>
 		<div class="info-container">
 			<h4 class="chef-name">{{x.chefname}}</h4>
 			<p class="chef-rnr">
-				<span class="chef-rating">Rating : <b>{{x.rating}}</b></span>
+				<span class="chef-rating">Rating : <b>{{x.rating}}</b></span></br>
+				<a href="">Chef Reviews</a>
 			</p>
+		</div>
+		<div class="rbtn-container">
+			<a class="btn btn-default btn-lg" href="#">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			</a>
 		</div>
 		</hr>
 	</div>

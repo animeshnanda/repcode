@@ -13,12 +13,7 @@ define([
             });
 	}])
 	.controller('aboutCtrl', ['$scope',function($scope) {
-	
 
-		$scope.hello = "ABOUT";
-		
-
-		
     }]);
 });
 

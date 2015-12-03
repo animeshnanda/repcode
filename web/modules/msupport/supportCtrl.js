@@ -14,8 +14,8 @@ define([
 			});
 	}])
 
-	.controller('supportCtrl', ['$scope','$http','$rootScope','$document',function($scope,$http,$rootScope,$document) {
-		$scope.hello = "hello support";
+	.controller('supportCtrl', ['$scope','$document',function($scope,$document) {
+
 	}])
 });
 

@@ -1,9 +1,6 @@
 body {
     margin: 10px;
 }
-.cheflist-group {
-    width: 50%;
-}
 .container {
     padding-right: 5px;
     padding-left: 5px;
@@ -48,12 +45,7 @@ body {
 }
 .price{font-size:20px;}
 
-.user-info{float:left;width:40%;padding: 5px;background: #6495ED;}
-.user-img{float:left;width:30%;}
-.user-basic-info{float:left;width:70%;padding:5px;}
-.user-address,.user-order{padding: 5px;background: #F0F8FF;width:60%;}
-.user-address{float:left;}
-.user-order{float:right;}
+.user-img{margin-top:20px;}
 
 .slideme {
 max-width: 320px;
@@ -63,7 +55,7 @@ height: 100%;
 }
 .chefimg-container>img{width:60px;margin-right:10px;float:left;}
 .rbtn-container{float: right;position: relative;bottom: 75px;}
-.cheflist-subheader{background: #6495ED;padding:10px;width:50%;}
+.cheflist-subheader{background: #6495ED;padding:10px;}
 @media (min-width: 768px){
 	.col-sm-2 {width: 10.666667%;}
 }
@@ -74,10 +66,8 @@ height: 100%;
 .list-group-item > img{width:100%;min-width:200px;}
 .combo-desc{font-size:11px;}
 .chef-info>img{width:60px;}
-.info-container>h4{font-size:14px;font-weight: bold;}
+.info-container>h4{font-size:13px;font-weight: bold;}
 .tab-content .list-group-item{min-height:340px;}
-.user-info{float:left;width:100%;}
-.user-address,.user-order{float: left;width:100%;}
 .cheflist-group {width: 100%;}
 .cheflist-subheader{width:100%;}
 }

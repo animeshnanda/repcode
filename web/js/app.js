@@ -39,6 +39,10 @@ define([
                     templateUrl: '/modules/mhome/home.html',
                     controller: 'homeCtrl'
                 }).	
+				when('/chef', {
+                    templateUrl: '/modules/mchef/chef.html',
+                    controller: 'chefCtrl'
+                }).	
 				when('/menu', {
                     templateUrl: '/modules/mmenu/menu.html',
                     controller: 'menuCtrl'
@@ -69,8 +73,8 @@ define([
                 }).					
                 otherwise({
                     redirectTo: '/',
-					templateUrl: '/modules/mchef/chef.html',
-					controller: 'chefCtrl'
+					templateUrl: '/modules/mhome/home.html',
+                    controller: 'homeCtrl'
                 });
 	}])
     .controller('mainPageCtrl', ['$scope', '$http', 'rootVariables', '$routeParams', function($scope, $http, rootVariables, $routeParams) {

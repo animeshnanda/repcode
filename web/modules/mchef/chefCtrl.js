@@ -30,6 +30,12 @@ define([
 
 		$scope.$watch('pickedLocation', $scope.toggleModal);
 		$scope.$watch('lookedUpLocation', $scope.toggleModal);
-		}])
+		
+		$scope.showModal = false;
+		$scope.toggleModal = function(){
+			$scope.showModal = !$scope.showModal;
+		};
+		
+	}])
 });
 

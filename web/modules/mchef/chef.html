@@ -21,7 +21,7 @@
 					<h4 class="chef-name">{{x.chefname}}</h4>
 					<p class="chef-rnr">
 						<span class="chef-rating">Rating : <b>{{x.rating}}</b></span></br>
-						<a href="">Chef Reviews</a>
+						<a href="" ng-click="toggleModal()">Chef Reviews</a>
 					</p>
 				</div>
 				<div class="rbtn-container">
@@ -31,7 +31,13 @@
 				</div>
 				</hr>
 			</div>
+			<modal title="Reviews" visible="showModal">
+				{{cheflistdata.state}}
+			</modal>
 		</div>
+		
+
+		
 	</div>
 	<div class="side-img-container desktop-view">
 	   <img class="side-img" src="../img/cartoon-chef-01.png"/>

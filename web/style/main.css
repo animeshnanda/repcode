@@ -28,7 +28,7 @@ body {margin: 10px;background:#D2691E;}
 .chefimg-container>img{width:60px;margin-right:10px;float:left;}
 .rbtn-container{float: right;position: relative;bottom: 75px;}
 .cheflist-subheader{background: #6495ED;padding:10px;}
-.side-img{width:50%;}
+.side-img{width:50%;padding: 0 30px;}
 
 /*Slider Common*/
 

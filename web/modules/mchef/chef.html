@@ -20,7 +20,7 @@
 				<div class="info-container">
 					<h4 class="chef-name">{{x.chefname}}</h4>
 					<p class="chef-rnr">
-						<span class="chef-rating">Rating : <b>{{x.rating}}</b></span></br>
+						<span class="chef-rating">Rating : <span class="stars">{{x.rating}}</span></span></br>
 						<a href="" ng-click="toggleModal()">Chef Reviews</a>
 					</p>
 				</div>
@@ -32,7 +32,23 @@
 				</hr>
 			</div>
 			<modal title="Reviews" visible="showModal">
-				{{cheflistdata.state}}
+				<!-- {{cheflistdata.state}} -->
+				<div class="list-group">
+					<div class="list-group-item" data-ng-repeat="x in chefreviewdata.reviews">
+						<div class="r-img">
+							<img class="img-circle img-responsive" ng-src="{{x.userimg}}"/>
+						</div>
+						<div class="r-info">
+							<p>
+								<span class="r-uname"><b>{{x.username}}</b></span>
+								<span class="r-rating"> Rating : {{x.rating}} </span></br>
+								<span class="r-order">Order : <i>{{x.orderid}}</i></span>&nbsp;<span class="r-date"><b><i>{{x.date}}</i></b></span>
+							</p>
+							<p class="r-desc">{{x.desc}}</p>
+							</hr>
+						</div>
+					</div>
+				</div>
 			</modal>
 		</div>
 		

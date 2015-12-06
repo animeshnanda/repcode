@@ -1,5 +1,6 @@
 require.config({
 	paths: {
+		'config' : '../js/config',
 		'jquery' : '../components/lib/jquery/jquery',		
 		'angular' : '../components/lib/angular/angular',
 		'angularRoute': '../components/lib/angular-route/angular-route',

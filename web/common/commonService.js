@@ -1,12 +1,13 @@
 'use strict';
 define([
-	'angular'
+	'angular',
+	'config'
 ], function(angular) {
 	angular.module('commonService', [])
 	.service('cheflistService', function($http,$q) {
 		this.getChefList = function() {
 			var strData;
-			var promise=$http.get("http://localhost:9000/data/chef-list.json")
+			var promise=$http.get(sysip+"/data/chef-list.json")
 			.success(function (data) {
 				strData = data;
 			});
@@ -16,7 +17,7 @@ define([
 	.service('lunchcomboService', function($http,$q) {
 		this.getLunchCombos = function() {
 			var strData;
-			var promise=$http.get("http://localhost:9000/data/lunch-combo.json")
+			var promise=$http.get(sysip+"/data/lunch-combo.json")
 			.success(function (data) {
 				strData = data;
 			});
@@ -26,7 +27,7 @@ define([
 	.service('dinnercomboService', function($http,$q) {
 		this.getDinnerCombos = function() {
 			var strData;
-			var promise=$http.get("http://localhost:9000/data/dinner-combo.json")
+			var promise=$http.get(sysip+"/data/dinner-combo.json")
 			.success(function (data) {
 				strData = data;
 			});
@@ -36,7 +37,7 @@ define([
 	.service('userinfoService', function($http,$q) {
 		this.getUserInfo = function() {
 			var strData;
-			var promise=$http.get("http://localhost:9000/data/user-info.json")
+			var promise=$http.get(sysip+"/data/user-info.json")
 			.success(function (data) {
 				strData = data;
 			});
@@ -46,7 +47,7 @@ define([
 	.service('reviewService', function($http,$q) {
 		this.getChefReview = function() {
 			var strData;
-			var promise=$http.get("http://localhost:9000/data/review-data.json")
+			var promise=$http.get(sysip+"/data/review-data.json")
 			.success(function (data) {
 				strData = data;
 			});

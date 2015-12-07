@@ -4,7 +4,8 @@ define([
 	'angularRoute',
 	'jquery',
 	'commonService',
-	'commonDirective'
+	'commonDirective',
+	'placepicker'
 ], function(angular) {
 	angular.module('myApp.chef', ['ngRoute','commonService','commonDirective'])
 	
@@ -20,7 +21,7 @@ define([
 		var chefData = cheflistService.getChefList().then(function(data){
 			$scope.cheflistdata = data.data;
 		});
-		location.get(angular.noop, angular.noop);
+		/*location.get(angular.noop, angular.noop);
 		$scope.isModalVisible = false;
 
 		$scope.toggleModal = function() {
@@ -28,7 +29,7 @@ define([
 		};
 
 		$scope.$watch('pickedLocation', $scope.toggleModal);
-		$scope.$watch('lookedUpLocation', $scope.toggleModal);
+		$scope.$watch('lookedUpLocation', $scope.toggleModal);*/
 		
 		var chefReviewData = reviewService.getChefReview().then(function(data){
 			$scope.chefreviewdata = data.data;
@@ -37,6 +38,13 @@ define([
 		$scope.toggleModal = function(){
 			$scope.showModal = !$scope.showModal;
 		};
+		
+		$(document).ready(function() {
+        
+			// Basic usage
+			$("#placepicker").placepicker();
+              
+		});
 		
 	}])
 });

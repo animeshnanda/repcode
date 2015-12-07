@@ -16,7 +16,8 @@ require.config({
 		'encBase64':'../components/lib/crypto/enc-base64-min',
 		'hmacsha256':'../components/lib/crypto/hmac-sha256',
 		'slideme': '../components/lib/slideme/jquery.slideme2',
-		'jssor' : '../components/lib/jssor/jssor.slider.mini'
+		'jssor' : '../components/lib/jssor/jssor.slider.mini',
+		'placepicker' : '../components/lib/placepicker/jquery.placepicker'
 	},
 	shim: {
 		angularRoute: {

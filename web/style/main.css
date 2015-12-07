@@ -37,6 +37,13 @@ body {margin: 10px;background:#D2691E;}
 .r-img img{width:60px;padding: 0 5px;}
 .r-info{float: left;width: 80%;}
 .r-rating,.r-date {float:right;}
+.placepicker-map {
+width: 100%;
+height: 300px;
+}
+.pac-container {
+border-radius: 5px;
+}
 
 /*Slider Common*/
 

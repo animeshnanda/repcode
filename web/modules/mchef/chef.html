@@ -6,16 +6,16 @@
 	<div class="row" data-example>
 		<div class="col-md-6">
 			<div class="form-group">
-				<input id="placepicker" class="form-control"/>
+				<input id="placepicker" ng-model="lpicker.text" class="form-control"/>
 			</div>
 		</div>
 	</div>
-
+<!-- {{cheflistdata.area}} -->
 
 	<div class="col-sm-5 form-box">
 		<div class="form-top">
 			<div class="form-top-left">
-				<h3>Chef Around {{cheflistdata.area}}</h3>
+				<h4>Chef Around <span id="picked-location">{{lpicker.text}}</span></h4>
 				<p>Enjoy the food from your favorite chef.</p>
 			</div>
 			<div class="form-top-right">

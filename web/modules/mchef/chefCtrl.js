@@ -40,12 +40,8 @@ define([
 		};
 		
 		$(document).ready(function() {
-        
-			// Basic usage
 			$("#placepicker").placepicker();
-              
 		});
-		
 	}])
 });
 

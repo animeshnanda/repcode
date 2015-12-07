@@ -9,7 +9,7 @@ body {margin: 10px;background:#D2691E;}
 .total{position: relative;top: -42px;left: 30px;font-size: 16px;font-weight: bold;}
 .form-bottom{background:#F0F8FF;}
 .form-top{background:#6495ED;}
-.img-container{float: left;padding-right: 25px;}
+.img-container{float: left; padding: 10px;}
 .img-container>img{width:350px;}
 .list-group-item > img{float:left;}
 .list-group-item{background: #F0F8FF;}
@@ -85,4 +85,5 @@ body {margin: 10px;background:#D2691E;}
 	.cheflist-subheader{width:100%;}
 	.info-container {padding: 0px 5px;width: 100%;}
 	.rbtn-container {padding: 15px 0;}
+	.img-container{float: left; padding: 0px;}
 }

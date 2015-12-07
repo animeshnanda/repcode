@@ -1,7 +1,7 @@
 body {margin: 10px;background:#D2691E;}
 .container {padding-right: 5px;padding-left: 5px;}
 .container-fluid {padding-right: 0px;padding-left: 0px;}
-.rlink{padding: 20px;}
+.rlink{padding: 20px;width: 250px;margin: auto;}
 .rlink a{width:100%;}
 .desktop-view{display:block;}
 .mob-view{display:none;}

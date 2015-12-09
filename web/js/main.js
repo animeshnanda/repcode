@@ -17,7 +17,8 @@ require.config({
 		'hmacsha256':'../components/lib/crypto/hmac-sha256',
 		'slideme': '../components/lib/slideme/jquery.slideme2',
 		'jssor' : '../components/lib/jssor/jssor.slider.mini',
-		'placepicker' : '../components/lib/placepicker/jquery.placepicker'
+		'placepicker' : '../components/lib/placepicker/jquery.placepicker',
+		'locationpicker' : '../components/lib/placepicker/locationpicker.jquery'
 	},
 	shim: {
 		angularRoute: {
@@ -56,6 +57,12 @@ require.config({
 		},
 		jssor: {
 			deps: ['jquery']
+		},
+		locationpicker: {
+			deps: ['jquery']
+		},
+		placepicker: {
+			deps: ['jquery','bootstrap']
 		}
 	},
 	//baseUrl: '/js',

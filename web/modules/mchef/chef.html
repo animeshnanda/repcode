@@ -1,7 +1,6 @@
 <div class="container">
 <!--
 	<location-picker ng-model="pickedLocation" limit-to="5"></location-picker>
--->
 
 	<div class="row" data-example>
 		<div class="col-md-6">
@@ -10,19 +9,21 @@
 			</div>
 		</div>
 	</div>
-<!-- {{cheflistdata.area}} -->
-
+-->		
 	<div class="col-sm-5 form-box">
-		<div class="form-top">
+		<p id="demo"></p>
+		<div class="form-top" ng-init="mySwitch=true" >
+            <input type="text" class="form-control" id="us3-address" ng-model="lpicker.text"/>
+            <div id="us3" ng-show="mySwitch"></div>
+            <input type="checkbox" ng-model="mySwitch"/>Toggle Map
 			<div class="form-top-left">
-				<h4>Chef Around <span id="picked-location">{{lpicker.text}}</span></h4>
+				<h4>Chef Around <span id="picked-location"><i>{{lpicker.text}}</i></span></h4>
 				<p>Enjoy the food from your favorite chef.</p>
 			</div>
 			<div class="form-top-right">
 				<i class="fa fa-eye"></i>
 			</div>
 		</div>
-	<!--div class="cheflist-subheader"><h3></h3><i class="fa icon-eye-open"></i></div -->
 		</hr>
 		<div class="list-group">
 			<div class="list-group-item cheflist-group" data-ng-repeat="x in cheflistdata.chef">
@@ -44,7 +45,6 @@
 				</hr>
 			</div>
 			<modal title="Reviews" visible="showModal">
-				<!-- {{cheflistdata.state}} -->
 				<div class="list-group">
 					<div class="list-group-item" data-ng-repeat="x in chefreviewdata.reviews">
 						<div class="r-img">
@@ -63,9 +63,6 @@
 				</div>
 			</modal>
 		</div>
-		
-
-		
 	</div>
 	<div class="side-img-container desktop-view">
 	   <img class="side-img" src="../img/cartoon-chef-01.png"/>

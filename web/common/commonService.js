@@ -4,6 +4,14 @@ define([
 	'config'
 ], function(angular) {
 	angular.module('commonService', [])
+	.service('loginService',['$http',function($http){
+        this.flogin = function(dt){
+            var responseData = $http.post(sysip+"/login",{mob:dt.mob,password:dt.pwd})
+            .success(function(data, status, headers, config){
+                    console.log(data.success);return data.success;});
+            return responseData;
+        };
+    }])
 	.service('cheflistService', function($http,$q) {
 		this.getChefList = function() {
 			var strData;

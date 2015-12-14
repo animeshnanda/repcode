@@ -1,0 +1,29 @@
+{
+  "name": "sampleapp",
+  "version": "1.0.0",
+  "description": "Buon Apetito",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "chai": "^3.4.1",
+    "express": "^4.13.3",
+    "mocha": "^2.3.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animeshnanda/sampleapp.git"
+  },
+  "author": "Animesh Nanda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/animeshnanda/sampleapp/issues"
+  },
+  "homepage": "https://github.com/animeshnanda/sampleapp#readme"
+}

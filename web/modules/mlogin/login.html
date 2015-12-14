@@ -1,9 +1,38 @@
-{{hello}}
-<section class="form-group">
+<!-- section class="form-group">
 	<label for="usr">Username : </label> <input type="text"  class="form-control" ng-model="form.uname" id="usr"></p>
 	<label for="pwd">Password : </label><input type="password" class="form-control" ng-model="form.pwd" id="pwd"></p>
 	<input class="btn-info" type="button" ng-click="submitData()" value="Submit"/>
 	<input class="btn-info" type="button" ng-click="clearData()" value="Cancel"/>
-</section>
-
+</section -->
+		<div class="container registerctrl">
+			<div class="row">
+				<div class="col-sm-5 form-box">
+					<div class="form-top">
+						<div class="form-top-left">
+							<h3>Login to our App</h3>
+							<p>Login To Our App To Get Instance Access</p>
+						</div>
+						<div class="form-top-right">
+							<i class="fa fa-pencil"></i>
+						</div>
+					</div>
+					<div class="form-bottom">
+						<form role="form" action="" method="post" class="registration-form">
+							<div class="form-group">
+								<label class="sr-only" for="form-mob-no">Mobile No.</label>
+								<input type="text" name="form-first-name" placeholder="Mobile No..." class="form-mob-no form-control" id="form-mob-no">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="form-password">Password</label>
+								<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+							</div>
+							<button type="submit" class="btn" ng-click="submitData()">Login!</button>
+						</form>
+					</div>
+				</div>
+				<div class="side-img-container desktop-view">
+				   <img class="side-img" src="../img/cartoon-chef-05.png"/>
+				</div>
+			</div>
+		</div>
 {{token}}

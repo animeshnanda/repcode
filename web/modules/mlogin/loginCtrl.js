@@ -4,9 +4,10 @@ define([
 	'angularRoute',
 	'jquery',
 	'angularCookies',
-	'bootstrap'
+	'bootstrap',
+	'commonService'
 ], function(angular) {
-    angular.module('myApp.login', ['ngRoute','ngCookies'])
+    angular.module('myApp.login', ['ngRoute','ngCookies','commonService'])
     .config(['$routeProvider', function($routeProvider) {
 
         $routeProvider.when('/login', {
@@ -34,7 +35,6 @@ define([
     }]) 
     .controller('loginCtrl', ['$scope','$cookies','$rootScope','$document','$http','loginService',function($scope,$cookies,$rootScope,$document,$http,loginService) {
 
-        $scope.hello = "hello Login";
         //var token = $cookies.get("authToken");
         //console.log(token);
         $scope.submitData = function() {
@@ -52,18 +52,6 @@ define([
                         alert(response.data.status);
                     }
                 });
-        };
-        $scope.clearData = function(msg) {
-                $scope.form.uname = "";
-                $scope.form.pwd = "";
-        };
-    }])
-    .service('loginService',['$http',function($http){
-        this.flogin = function(dt){
-            var responseData = $http.post("http://localhost:8080/login",{username:dt.uname,password:dt.pwd})
-            .success(function(data, status, headers, config){
-                    console.log(data.success);return data.success;});
-            return responseData;
         };
     }]);
 });
